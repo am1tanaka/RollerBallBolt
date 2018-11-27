@@ -8,6 +8,7 @@ Assets/AssetStoreTools*
 Assets/bolt*
 Assets/Gizmos/Bolt*
 Assets/Plugins/Photon*
+Bolt_Debug*
 
 # Visual Studio cache directory
 .vs/
