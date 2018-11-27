@@ -325,6 +325,11 @@ Prefab:
       propertyPath: m_TagString
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 114034609384478754, guid: 7c5aaca3b054a8a46b0a4ec4cc80b86c,
+        type: 2}
+      propertyPath: _sceneGuid
+      value: 27c5db25-30f4-4121-9764-8111af3c4b5e
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7c5aaca3b054a8a46b0a4ec4cc80b86c, type: 2}
   m_IsPrefabParent: 0
@@ -889,6 +894,11 @@ Prefab:
         type: 2}
       propertyPath: _sceneGuid
       value: 6c80c39a-0368-4731-ac38-7678bc3c6d00
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523632141463508, guid: 6a490f8a80f75f7489c199efe5f72a4c,
+        type: 2}
+      propertyPath: input2Speed
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6a490f8a80f75f7489c199efe5f72a4c, type: 2}
