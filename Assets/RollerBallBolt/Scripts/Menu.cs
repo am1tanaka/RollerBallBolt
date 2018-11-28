@@ -5,7 +5,6 @@ using UdpKit;
 
 namespace RollerBallBolt
 {
-
     public class Menu : Bolt.GlobalEventListener
     {
         void OnGUI()
@@ -53,5 +52,4 @@ namespace RollerBallBolt
             }
         }
     }
-
 }

@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114531918790223672}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneGuid: 
-  _serializerGuid: 48424c84-7ecd-486e-9414-b83719568c26
+  _serializerGuid: 396b15ba-da60-48f3-b1e5-541b48b0d9d3
   _prefabId: 1
   _updateRate: 1
   _autoFreezeProxyFrames: 0

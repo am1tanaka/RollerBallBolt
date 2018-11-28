@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace RollerBallBolt
 {
-    public class Ball : Bolt.EntityBehaviour<IPlayerState>
+    public class Ball : Bolt.EntityBehaviour<ITransformState>
     {
         /// <summary>
         /// transformをIPlayerStateのTranformに割り当てます。

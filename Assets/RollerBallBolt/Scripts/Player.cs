@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Bolt;
 using UnityEngine;
 
-public class Player : Bolt.EntityBehaviour<IPlayerState> {
+public class Player : Bolt.EntityBehaviour<ITransformState> {
 
     [Tooltip("送られてきた操作を速度に変換するレート。Mouse XとMouse Yは-1～1に正規化されているので、動作環境の解像度は考えなくて構いません。"), SerializeField]
     float input2Speed = 20f;
@@ -46,7 +46,7 @@ public class Player : Bolt.EntityBehaviour<IPlayerState> {
     {
         IRollerBallBoltCommandInput input = RollerBallBoltCommand.Create();
 
-        Vector3 data = new Vector3(_x, _y, 0);
+        Vector3 data = new Vector3(_x, 0, _y);
         input.Mouse = data;
 
         entity.QueueInput(input);
@@ -76,10 +76,7 @@ public class Player : Bolt.EntityBehaviour<IPlayerState> {
             cmd.Result.Position = transform.position;
 
             // 入力を使ってオブジェクトを動かします
-            Vector3 vel = rb.velocity;
-            vel.x = cmd.Input.Mouse.x;
-            vel.z = cmd.Input.Mouse.y;
-            rb.velocity = vel * input2Speed;
+            rb.velocity = cmd.Input.Mouse * input2Speed;
         }
     }
 
