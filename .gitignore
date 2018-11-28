@@ -5,7 +5,9 @@
 [Bb]uilds/
 Assets/AssetStoreTools*
 
-Assets/bolt*
+Assets/bolt/*
+Assets/bolt.meta
+!Assets/bolt/project.bytes
 Assets/Gizmos/Bolt*
 Assets/Plugins/Photon*
 Bolt_Debug*
