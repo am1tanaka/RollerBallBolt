@@ -71,16 +71,17 @@ namespace RollerBallBolt
             if (resetState)
             {
                 // Player2。送られてきたコマンドのデータを反映させます
-                transform.position = cmd.Result.Position;
+                transform.localPosition = cmd.Result.Position;
             }
             else
             {
-                // ホストとクライアントの双方で呼び出されます
-                // 現在の座標を送信します
-                cmd.Result.Position = transform.position;
-
                 // 入力を使ってオブジェクトを動かします
                 rb.velocity = cmd.Input.Mouse * input2Speed;
+
+                // ホストとクライアントの双方で呼び出されます
+                // 現在の座標を送信します
+                cmd.Result.Position = transform.localPosition;
+
             }
         }
 
