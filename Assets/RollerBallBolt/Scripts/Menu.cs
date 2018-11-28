@@ -7,6 +7,7 @@ namespace RollerBallBolt
 {
     public class Menu : Bolt.GlobalEventListener
     {
+        /*
         void OnGUI()
         {
             GUILayout.BeginArea(new Rect(10, 10, Screen.width - 20, Screen.height - 20));
@@ -51,5 +52,6 @@ namespace RollerBallBolt
                 }
             }
         }
+        */
     }
 }
