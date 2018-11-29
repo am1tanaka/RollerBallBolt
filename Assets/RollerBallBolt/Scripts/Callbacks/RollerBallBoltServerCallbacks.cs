@@ -5,7 +5,7 @@ namespace RollerBallBolt
 {
 
     [BoltGlobalBehaviour(BoltNetworkModes.Server, "Game")]
-    public class TutorialServerCallbacks : Bolt.GlobalEventListener
+    public class RollerBallBoltServerCallbacks : Bolt.GlobalEventListener
     {
         /// <summary>
         /// このプログラムがシーンを読み込んだ時の処理
